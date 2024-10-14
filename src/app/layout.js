@@ -20,11 +20,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-      <style>
-      @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
-      </style>
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
