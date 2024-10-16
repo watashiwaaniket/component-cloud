@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
   font-family: 'Jersey 10', sans-serif;
+  background-color: #333333;
+}
+
+.body {
+  padding: 20px;
 }
 
 .navbar{
@@ -18,12 +23,14 @@
 
 .navbar h1{
   color: aqua;
+  background: #1E1E1E;
   font-size: 48px;
 }
 
 .nav-buttons ul{
   display: flex;
   list-style: none;
+  background: #1E1E1E;
 }
 
 .nav-buttons li{
@@ -35,10 +42,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  
 }
 
 .nav-buttons a{
   color: #D9D9D9;
+  background: #666;
   font-size: 24px;
   text-decoration: none;
 }
