@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+}
+
+.selectioncolumn {
+    flex: 1;
+    padding: 1rem;
+}
+
+.displaycolumn {
+    flex: 5;
+    padding: 1rem;
+}

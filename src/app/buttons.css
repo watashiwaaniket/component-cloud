@@ -1,0 +1,17 @@
+/* CSS File for all possible buttons in the site */
+
+/* Selection Button for :
+1. explore page  */
+.selectionButton {
+    height: 40px;
+    width: 100%;
+    /* margin: 0.5em; */
+    font-size: 16px;
+    color: #D9D9D9;
+    background-color: #666666;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
+}
