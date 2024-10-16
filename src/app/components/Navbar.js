@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Navbar() {
     return(
@@ -8,8 +9,8 @@ export default function Navbar() {
                 </div>
                 <div className="nav-buttons">
                     <ul>
-                        <li><a href="/">+ Create</a></li>
-                        <li><a href="/">Login</a></li>
+                        <li><Link href="/create-component">+ Create</Link></li>
+                        <li><Link href="/login">Login</Link></li>
                     </ul>
                 </div>
             </div>
