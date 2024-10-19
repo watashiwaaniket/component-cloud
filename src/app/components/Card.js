@@ -4,6 +4,11 @@
 // When running the page, the page sends a query find all viable components and uses this component to create all the different css components inside this card.
 // For current example, I will be using SelectionButton.js as the component
 
-export default function Card({title, description, cssComponent, className}){
-
+export default function Card({title, description, cssComponent}){
+    return(
+        <div className={'DisplayCard'}>
+            <h2 className="card-title">{title}</h2>
+            <h2 className="card-description">{description}</h2>
+        </div>
+    );
 }

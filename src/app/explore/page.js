@@ -2,7 +2,10 @@
 
 import Navbar from "../components/Navbar"
 import SelectionButton from "../components/SelectionButton"
+import Card from "../components/Card";
+import SelectionButtonCss from "../components/css/SelectionButton.css";
 import styles from './explore.module.css'
+import CardCss from "../components/css/Card.css"
 
 export default function Page() {
 
@@ -18,9 +21,27 @@ export default function Page() {
                 <SelectionButton label="TestButton" onClick={handleClick} className={"selectionButton"}></SelectionButton>
                 <SelectionButton label="TestButton" onClick={handleClick} className={"selectionButton"}></SelectionButton>
                 <SelectionButton label="TestButton" onClick={handleClick} className={"selectionButton"}></SelectionButton>
+                <SelectionButton label="TestButton" onClick={handleClick} className={"selectionButton"}></SelectionButton>
+                <SelectionButton label="TestButton" onClick={handleClick} className={"selectionButton"}></SelectionButton>
+                <SelectionButton label="TestButton" onClick={handleClick} className={"selectionButton"}></SelectionButton>
                 </div>
                 
-                <div className={styles.displaycolumn}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                <div className={styles.displaycolumn}>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                        <Card title={"Hello World"} description={"This contains the description"}></Card>
+                </div>
             </div>
             
         </div>

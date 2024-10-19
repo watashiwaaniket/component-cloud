@@ -1,13 +1,25 @@
 .container {
     display: flex;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .selectioncolumn {
+    display: flex;
     flex: 1;
-    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    /* flex: 1;
+    padding: 1rem; */
 }
 
 .displaycolumn {
-    flex: 5;
-    padding: 1rem;
+    margin-top: 1rem;
+    flex: 3;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
