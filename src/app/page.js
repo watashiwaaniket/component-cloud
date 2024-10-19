@@ -1,6 +1,7 @@
 import Footer from './components/Footer.js';
 import Input from './components/Input.js';
 import Navbar from './components/Navbar.js';
+import Link from 'next/link.js';
 export default function Home() {
 
   const rocketSvg = (<svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +20,7 @@ export default function Home() {
       <section className='landing-main-section'>
         <h1>Your Ultimate Goto <br></br> UI Library</h1>
         <div><Input /></div>
-        <button id='element-button'> {rocketSvg} Browse All Elements</button>        
+        <Link href="/explore"><button id='element-button'> {rocketSvg} Browse All Elements</button></Link>        
       </section>
       <Footer />      
     </>
