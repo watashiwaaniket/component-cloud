@@ -20,7 +20,7 @@ export default function Home() {
       <section className='landing-main-section'>
         <h1>Your Ultimate Goto <br></br> UI Library</h1>
         <div><Input /></div>
-        <Link href="/explore"><button id='element-button'> {rocketSvg} Browse All Elements</button></Link>        
+        <Link href="/explore" id='landing-link'><button id='element-button'> {rocketSvg} Browse All Elements</button></Link>        
       </section>
       <Footer />      
     </>
