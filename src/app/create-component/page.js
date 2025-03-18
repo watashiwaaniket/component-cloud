@@ -1,8 +1,9 @@
 'use client'
 
-import { useEffect , useRef } from "react";
+import { useRef } from "react";
 import Navbar from "../components/Navbar"
 import styles from "./create-component.module.css"
+import { FaFolder, FaPenToSquare } from "react-icons/fa6"
 
 export default function CreateComponent() {
 
@@ -48,11 +49,20 @@ export default function CreateComponent() {
     }
 
 
+    function handleDraft(){
+        //here the draft logic in db would be handled, but the question is do we really need a draft?
+        return;
+    }
+
+    function handleSubmit(){
+        //here the logic for pushing the code to the db would be handled
+        return;
+    }
+
     return(
         <>
         <Navbar></Navbar>
-
-        
+  
 
             <div className={styles.editorContainer}>
                 <div className={styles.previewSection}>
@@ -65,6 +75,11 @@ export default function CreateComponent() {
                         <textarea onKeyUp={run} className={styles.cssCode} id="css_code" ref={cssRef}></textarea>                        
                         
                 </div>
+                
+            </div>
+            <div className={styles.submitSection}>
+                <button onClick={handleDraft}><FaFolder /> save as a draft</button>
+                <button onClick={handleSubmit}><FaPenToSquare /> submit for review</button>
             </div>
 
             <script type="text/javascript">

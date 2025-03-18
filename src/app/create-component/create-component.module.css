@@ -47,6 +47,7 @@
     width: inherit;
     height: 100%;
     resize: none;
+    font-family: Verdana;
     background-color: #D9D9D9;
     border-radius: 15px;
     padding: 0.5rem;
@@ -56,9 +57,31 @@
     background-color: #D9D9D9;
     width: inherit;
     height: 100%;
+    font-family: Verdana;
     resize: none;
     border-radius: 15px;
     padding: 0.5rem;
+}
+
+.submitSection{
+    width: inherit;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 0.8rem;
+    border-radius: 24px;
+    margin: 5px 50px 5px 50px;
+
+}
+
+.submitSection button{
+    padding: 0.8rem;
+    font-weight: 600;
+    font-family: Arial;
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+    width: 210px;
 }
 
 /* inside I frame is used to center whatever elements are there created form the code to be at the center of the IFrame, this only gets used once the run function is being used */
