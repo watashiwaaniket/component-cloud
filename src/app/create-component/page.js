@@ -3,6 +3,7 @@
 import { useEffect , useRef } from "react";
 import Navbar from "../components/Navbar"
 import styles from "./create-component.module.css"
+import { Editor } from "@monaco-editor/react";
 
 export default function CreateComponent() {
 
@@ -22,9 +23,9 @@ export default function CreateComponent() {
     const cssRef = useRef(null);
     const iframeRef = useRef(null);
 
-    function run() {
-        const htmlCode = htmlRef.current.value;
-        const cssCode = cssRef.current.value;
+    function updateViewer() {
+        const htmlCode = htmlRef.current.getValue()
+        const cssCode = cssRef.current.getValue();
 
         const iframeDocument = iframeRef.current.contentDocument || iframeRef.current.contentWindow.document;
 
@@ -47,6 +48,14 @@ export default function CreateComponent() {
         iframeDocument.close();
     }
 
+    function handleHTMLEditorMount(editor, monaco){
+        htmlRef.current = editor;
+        }
+
+    function handleCSSEditorMount(editor, monaco){
+        cssRef.current = editor;
+    }
+
 
     return(
         <>
@@ -60,9 +69,12 @@ export default function CreateComponent() {
                 </div>
                 <div className={styles.editorSection}>
                         <h1>HTML Code</h1>
-                        <textarea onKeyUp={run} className={styles.htmlCode} id="html_code" ref={htmlRef}></textarea>
-                        <h1>CSS Code</h1>
-                        <textarea onKeyUp={run} className={styles.cssCode} id="css_code" ref={cssRef}></textarea>                        
+                        <Editor className = {styles.htmlCode} defaultLanguage="html" defaultValue="<!-- Write HTML Code here-->"  onChange={updateViewer} onMount={handleHTMLEditorMount} options={{ fontSize: 20 }}/>
+                        {/* <textarea onKeyUp={run} className={styles.htmlCode} id="html_code" ref={htmlRef}></textarea> */}
+                        {/* <div className= {styles.resizeDiv} ></div>  */}
+                        <h1>CSS Code</h1> 
+                        <Editor className = {styles.cssCode} defaultLanguage="css" defaultValue="/* Write CSS Code here */" onChange={updateViewer} onMount={handleCSSEditorMount} options={{ fontSize: 20 }}/>
+                        {/* <textarea onKeyUp={run} className={styles.cssCode} id="css_code" ref={cssRef}></textarea>                         */}
                         
                 </div>
             </div>
