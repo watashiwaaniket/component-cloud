@@ -129,7 +129,7 @@ body{
 
 .footer{
   width: 100%;
-  height: 110px;
+  height: 20vh;
   background: #1E1E1E;
   border-radius: 40px 40px 0px 0px;
   display: flex;

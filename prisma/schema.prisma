@@ -28,3 +28,9 @@ enum Role{
 enum Provider{
   Google
 }
+
+// TODO
+// TABLES TO MAKE
+// Role table
+// Storage for css components
+// 
